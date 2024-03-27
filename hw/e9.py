@@ -1,0 +1,5 @@
+saving = int(input())
+yr1 = round((float(saving)*1.04),2)
+yr2 = round((float(yr1)*1.04) ,2)
+yr3 = round((float(yr2)*1.04),2)
+print(yr1, yr2, yr3)
