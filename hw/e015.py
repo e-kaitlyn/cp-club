@@ -1,0 +1,5 @@
+ft = float(input())
+inch = round(ft*12,2)
+yard = round(ft/3,2)
+mile = round(ft/5280,2)
+print(inch,"inches,", yard,"yards,",mile,"miles")
