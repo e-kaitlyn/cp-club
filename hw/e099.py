@@ -15,15 +15,16 @@ def toTen(base, number):
     return(numTen)
 
 def toBase(base, numTen):
-    remainder = 0
     numBase = []
-    while remainder<base:
+    remainder = 0
+    while numTen>=base:
+        num = numTen//base
         remainder = numTen%base
         numBase.insert(0,str(remainder))
-        numTen = numTen//base
+        numTen = num
+    numBase.insert(0,str(numTen))
     numBase = "".join(numBase)
     return(numBase)
-
 
 numTen = toTen(currentbase, number)
 if convertbase == 10:
