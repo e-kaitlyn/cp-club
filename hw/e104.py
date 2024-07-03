@@ -5,3 +5,4 @@ while n!=0:
     n = int(input())
 numbers.sort()
 print(numbers)
+
