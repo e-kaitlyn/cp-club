@@ -1,0 +1,23 @@
+def commonElements(A, B, C):
+    a, b, c = 0, 0, 0
+    elements = [] 
+
+    while a < len(A) and b < len(B) and c < len(C):
+        if A[a] == B[b] == C[c]:
+            elements.append(A[a])
+            a += 1
+            b += 1
+            c += 1
+        elif A[a] < B[b]:
+            a += 1
+        elif B[b] < C[c]:
+            b += 1
+        else:
+            c += 1
+
+    print(elements) 
+
+A = [2, 5, 10, 30]
+B = [5, 20, 34]
+C = [5, 13, 19]
+commonElements(A, B, C)
